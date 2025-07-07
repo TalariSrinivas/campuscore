@@ -5,7 +5,7 @@ function HeroSection() {
   const styles = {
     heroSection: {
       flex: 1,
-      background: "linear-gradient(135deg, #2c5ad9 0%, #3a7ced 100%)",
+      background: "linear-gradient(135deg, #1e3c72 0%, #2a5298 40%, #4facfe 100%)",
       borderRadius: "50px",
       display: "flex",
       flexDirection: "column",

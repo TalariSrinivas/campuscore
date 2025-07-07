@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaUser, FaEye, FaEyeSlash } from "react-icons/fa";
-import RoleToggle from "./RoleToggle";
-import GoogleLoginButton from "./GoogleLoginButton";
+import RoleToggle from "./Toggle";
+import GoogleLoginButton from "./Button";
 
 function LoginForm() {
   const [role, setRole] = useState("Faculty");
@@ -40,12 +40,15 @@ function LoginForm() {
     },
     formBox: {
       width: "100%",
-      maxWidth: "400px",
+      maxWidth: "550px",
+      minHeight: "640px",
       background: "#ffffff",
-      padding: "2rem",
-      borderRadius: "20px",
-      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.05)",
-      transition: "box-shadow 0.3s ease",
+      padding: "2.5rem",
+      borderRadius: "24px",
+      boxShadow: "0 10px 30px rgba(0, 0, 0, 0.07)",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
     },
     title: {
       fontSize: "1.5rem",
@@ -58,6 +61,7 @@ function LoginForm() {
       display: "flex",
       flexDirection: "column",
       gap: "1.25rem",
+      flex: 1,
     },
     formGroup: {
       display: "flex",
@@ -80,11 +84,7 @@ function LoginForm() {
       borderRadius: "10px",
       fontSize: "1rem",
       background: "#f9fafb",
-      transition: "border-color 0.3s, box-shadow 0.3s",
-    },
-    inputFocus: {
-      borderColor: "#3b82f6",
-      boxShadow: "0 0 0 3px rgba(59, 130, 246, 0.1)",
+      boxSizing: "border-box",
     },
     icon: {
       position: "absolute",
@@ -121,10 +121,6 @@ function LoginForm() {
       fontSize: "1rem",
       fontWeight: 600,
       cursor: "pointer",
-      transition: "background-color 0.3s",
-    },
-    loginButtonHover: {
-      background: "#2563eb",
     },
     divider: {
       display: "flex",

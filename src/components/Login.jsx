@@ -1,7 +1,7 @@
 import React from "react";
-import HeroSection from './HeroSection';
-import LoginForm from './LoginForm';
-import PageFooter from './PageFooter';
+import HeroSection from './Hero';
+import LoginForm from './Form';
+import PageFooter from './Footer';
 
 function LoginSection() {
   return (
